@@ -9,7 +9,7 @@ fn main() {
 }
 
 fn guess_game(){
-    let rand:i32 = rand::thread_rng().gen_range( 1, 101);
+    let rand:i32 = rand::thread_rng().gen_range( 1..=100);
     let mut count = 0;
     loop {
         let mut guess = String::new();
